@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+   
+
+    <!-- Webpage Title -->
+    <title>Visual assist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+	<link  rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href=" {{ url_for('static', filename='') }}">
+    <style>
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Revo</a> -->
+
+           <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="#" style="text-decoration: none;font-size: px;"><img src="{{ url_for('static', filename='images/assist.png') }} "  style="width: 100px; height: 100px;" > Visual Assist
+            </a> 
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                    </li>
+                    
+                </ul>
+                
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Text Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container text-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="image-container">
+                                                <img class="img-fluid" src=" {{ url_for('static', filename='images/ai2.png') }}" alt="alternative">
+                                            </div> <!-- end of image-container -->
+                                        </div> <!-- end of col -->
+                                        <div class="col-lg-6 col-xl-5">
+                                            <div class="text-container">
+                                                <h1 class="h1-large">Introduction To Object Detection</h1>
+                                                <p class="p-large">Object detection is a computer vision task that involves identifying and locating specific objects within images or videos, often by drawing bounding boxes around them. It's widely used in applications like autonomous vehicles, security systems, and image recognition.</p>
+                                                
+                                            </div> <!-- end of text-container -->
+                                        </div> <!-- end of col -->
+                                    </div> <!-- end of row -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="image-container">
+                                                <img class="img-fluid" src="{{ url_for('static', filename='images/ai3.png') }}" alt="alternative">
+                                            </div> <!-- end of image-container -->
+                                        </div> <!-- end of col -->
+                                        <div class="col-lg-6 col-xl-5">
+                                            <div class="text-container">
+                                                <h1 class="h1-large">Need For This Application</h1>
+                                                <p class="p-large">
+                                                    Object detection applications are crucial for enhancing safety and efficiency in various industries, such as autonomous driving to detect obstacles and in retail for inventory management and customer analytics. They also play a vital role in surveillance and security systems for threat detection and monitoring.</p>
+                                                
+                                                
+                                            </div> <!-- end of text-container -->
+                                        </div> <!-- end of col -->
+                                    </div> <!-- end of row -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-7">
+                                            <div class="image-container">
+                                                <img class="img-fluid" src="{{ url_for('static', filename='images/impact.png') }}" alt="alternative">
+                                            </div> <!-- end of image-container -->
+                                        </div> <!-- end of col -->
+                                        <div class="col-lg-6 col-xl-5">
+                                            <div class="text-container">
+                                                <h1 class="h1-large">Impact On Society</h1>
+                                                <p class="p-large"> Object detection technology has a profound societal impact by improving road safety, reducing crime, and advancing medical diagnostics through automated detection of objects like traffic signs, weapons, and anomalies in medical images, ultimately saving lives and resources.</p>
+                                               
+                                            </div> <!-- end of text-container -->
+                                        </div> <!-- end of col -->
+                                    </div> <!-- end of row -->
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+                            
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of text slider -->
+
+               <!----> </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    
+
+
+    <!-- Features -->
+    <div id="features" class="cards-1 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Features</h2>
+                    <p class="p-heading">
+                        YOLOv5 utilizes a highly efficient algorithm based on a deep neural network architecture that combines speed and accuracy. It also supports a wide range of object classes and is optimized for real-time, resource-efficient object detection.</p>
+                </div> <!-- end of div -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i><img src="{{ url_for('static', filename='images/camera.png') }} " alt="" style="width: 50px;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Open Cv</h5>
+                            <p class="card-t">OpenCV is used for preprocessing and feature extraction from the input image data of object detection.<br><br></p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i><img src="{{ url_for('static', filename='images/recognition.png') }} " alt="" style="width: 50px;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Object Recognition</h5>
+                            <p class="card-t">Hand sign recognition is a feature of the project that involves identifying and classifying the different object used in day to day life.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i><img src="{{ url_for('static', filename='images/chat.png') }} " alt="" style="width: 50px;"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Audio Feedback</h5>
+                            <p class="card-t">Audio feedback using gTTS can audibly announce the results of YOLO object detection and user interaction with the system.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of features -->
+<!-- Video -->
+    <div class="basic-2 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Video Presentation</h2>
+                    <p class="p-heading">In a video demonstration, YOLO object detection, coupled with gTTS audio feedback, provides real-time identification and spoken descriptions of objects within the video, offering an inclusive and informative experience for users. This technology has applications in assisting the visually impaired, enhancing security systems, and more.</p>
+
+                    <!-- Video Preview -->
+                    
+                    <video width="700" controls>
+                        <source src={{ url_for('static', filename="images/objdet.mkv") }} type="video/mp4">
+        
+                     
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of video -->
+    <!-- Details 1 -->
+    <div id="details" class="basic-1 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='images/remote.png') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>Check It Yourself</h2>
+                        <!-- <p>Our experienced designers and developers have implemented cutting edge tools that will help you sketch your ideas in record time and prepare the design</p> -->
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Visual assist works using openCV which supports camera to capture and read the frame</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">You can click on the "Test yourself " and the camera will open</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">The feed will capture the object and recognise the same</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Test Yourself</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details Lightbox -->
+    <!-- Lightbox -->
+	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button"></button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src=" {{ url_for('video_feed') }}" >
+                </div> <!-- end of image-container -->
+			</div> <!-- end of col -->
+			<div class="col-lg-4">
+                <h3>Visual assist</h3>
+				<hr>
+                <p>On the left side webcam is displayed .</p>
+                <!-- <h4>Steps:-</h4> -->
+                <p>Tips for better results:-</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Keep the environment well lit.</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Ensure that the objects are fully in frame.</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Increase the volume if the audio output isn't fully audible.</div>
+                    </li>
+                    <!-- <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Location details screen</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Onboarding steps interface</div>
+                    </li> -->
+                </ul>
+                <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+			</div> <!-- end of col -->
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightbox -->
+
+
+    <!-- Details 2 -->
+    <div class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="tabs-container">
+            
+                        <!-- Tabs Links -->
+                        <ul class="nav nav-tabs" id="revoTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">INTRODUCTION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">USE CASE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">COMMUNITY DRIVEN</a>
+                            </li>
+                        </ul>
+                        <!-- end of tabs links -->
+                        
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="revoTabsContent">
+        
+                            <!-- Tab -->
+                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <h4></h4>
+                                <!-- <p>American Sign Language (ASL) is a visual language that is primarily used by deaf and hard-of-hearing individuals in the United States and Canada. It is a complex language that utilizes hand gestures, facial expressions, and body movements to convey meaning and is recognized as a fully-fledged language by linguists. <a class="turquoise page-scroll" href="#features">features</a> section shows how we are able to achieve all this.</p> -->
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">YOLO is a real-time object detection algorithm designed for rapid identification of objects in images and videos.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">It utilizes a single convolutional neural network to predict bounding boxes, confidence scores, and class labels for multiple objects in a single pass.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">YOLO is known for its versatility, making it suitable for various object detection tasks and adaptable to different domains and datasets.</div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of tab-pane --> 
+                            <!-- end of tab -->
+        
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <div class="media-bullet">1.</div>
+                                        <div class="media-body">YOLO is commonly used in autonomous vehicles and robotics for real-time object detection, enabling vehicles to recognize and respond to objects such as pedestrians, vehicles, and traffic signs. </div>
+                                    </li>
+                                    <li class="media">
+                                        <div class="media-bullet">2.</div>
+                                        <div class="media-body">It is also employed in security and surveillance systems for monitoring and detecting intruders, identifying objects in crowded areas, and tracking individuals or objects of interest.</div>
+                                    </li>
+                                   
+                                </ul>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+        
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                                
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">YOLO is an open-source project, and its code and models are freely available to the community. This encourages collaboration, contributions, and the development of customized versions and applications.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">There is a vibrant community of researchers, developers, and enthusiasts who contribute to YOLO's improvement, share their own variations, and offer support through forums, GitHub repositories, and online communities.</div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+        
+                        </div> <!-- end of tab-content -->
+                        <!-- end of tabs content -->
+        
+                    </div> <!-- end of tabs-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='images/scissors.png') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
+
+	
+    <!-- Scripts -->
+
+    <script src=" {{ url_for('static', filename='js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ url_for('static', filename='js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> <!-- Custom scripts -->
+</body>
+</html>

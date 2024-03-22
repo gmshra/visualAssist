@@ -44,14 +44,14 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link page-scroll" href="{{ url_for('index') }}">HOME <span class="sr-only">(current)</span></a>
                     </li>
                    
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                        <a class="nav-link page-scroll" href="{{ url_for('mainf') }}">MAIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                        <a class="nav-link page-scroll" href="{{ url_for('how') }}">HOW IT WORKS</a>
                     </li>
                     
                 </ul>
@@ -218,8 +218,8 @@
 
                     <!-- Video Preview -->
                     
-                    <video width="700" controls>
-                        <source src={{ url_for('static', filename="images/objdet.mkv") }} type="video/mp4">
+                    <video width="1000" controls>
+                        <source src={{ url_for('static', filename='') }}"" type="video/mp4">
         
                      
                 </div> <!-- end of col -->
@@ -228,173 +228,8 @@
     </div> <!-- end of basic-2 -->
     <!-- end of video -->
     <!-- Details 1 -->
-    <div id="details" class="basic-1 bg-dark-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src=" {{ url_for('static', filename='images/remote.png') }}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Check It Yourself</h2>
-                        <!-- <p>Our experienced designers and developers have implemented cutting edge tools that will help you sketch your ideas in record time and prepare the design</p> -->
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Visual assist works using openCV which supports camera to capture and read the frame</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">You can click on the "Test yourself " and the camera will open</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">The feed will capture the object and recognise the same</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Test Yourself</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details Lightbox -->
-    <!-- Lightbox -->
-	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button"></button>
-			<div class="col-lg-8">
-                <div class="image-container">
-                    <img class="img-fluid" src=" {{ url_for('video_feed') }}" >
-                </div> <!-- end of image-container -->
-			</div> <!-- end of col -->
-			<div class="col-lg-4">
-                <h3>Visual assist</h3>
-				<hr>
-                <p>On the left side webcam is displayed .</p>
-                <!-- <h4>Steps:-</h4> -->
-                <p>Tips for better results:-</p>
-                <ul class="list-unstyled li-space-lg">
-                    <li class="media">
-                        <i class="fas fa-square"></i><div class="media-body">Keep the environment well lit.</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-square"></i><div class="media-body">Ensure that the objects are fully in frame.</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-square"></i><div class="media-body">Increase the volume if the audio output isn't fully audible.</div>
-                    </li>
-                    <!-- <li class="media">
-                        <i class="fas fa-square"></i><div class="media-body">Location details screen</div>
-                    </li>
-                    <li class="media">
-                        <i class="fas fa-square"></i><div class="media-body">Onboarding steps interface</div>
-                    </li> -->
-                </ul>
-                <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
-			</div> <!-- end of col -->
-		</div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    <!-- end of details lightbox -->
-
-
-    <!-- Details 2 -->
-    <div class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="tabs-container">
-            
-                        <!-- Tabs Links -->
-                        <ul class="nav nav-tabs" id="revoTabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">INTRODUCTION</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">USE CASE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">COMMUNITY DRIVEN</a>
-                            </li>
-                        </ul>
-                        <!-- end of tabs links -->
-                        
-                        <!-- Tabs Content -->
-                        <div class="tab-content" id="revoTabsContent">
-        
-                            <!-- Tab -->
-                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                                <h4></h4>
-                                <!-- <p>American Sign Language (ASL) is a visual language that is primarily used by deaf and hard-of-hearing individuals in the United States and Canada. It is a complex language that utilizes hand gestures, facial expressions, and body movements to convey meaning and is recognized as a fully-fledged language by linguists. <a class="turquoise page-scroll" href="#features">features</a> section shows how we are able to achieve all this.</p> -->
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">YOLO is a real-time object detection algorithm designed for rapid identification of objects in images and videos.</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">It utilizes a single convolutional neural network to predict bounding boxes, confidence scores, and class labels for multiple objects in a single pass.</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">YOLO is known for its versatility, making it suitable for various object detection tasks and adaptable to different domains and datasets.</div>
-                                    </li>
-                                </ul>
-                            </div> <!-- end of tab-pane --> 
-                            <!-- end of tab -->
-        
-                            <!-- Tab -->
-                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <div class="media-bullet">1.</div>
-                                        <div class="media-body">YOLO is commonly used in autonomous vehicles and robotics for real-time object detection, enabling vehicles to recognize and respond to objects such as pedestrians, vehicles, and traffic signs. </div>
-                                    </li>
-                                    <li class="media">
-                                        <div class="media-bullet">2.</div>
-                                        <div class="media-body">It is also employed in security and surveillance systems for monitoring and detecting intruders, identifying objects in crowded areas, and tracking individuals or objects of interest.</div>
-                                    </li>
-                                   
-                                </ul>
-                            </div> <!-- end of tab-pane -->
-                            <!-- end of tab -->
-        
-                            <!-- Tab -->
-                            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                                
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">YOLO is an open-source project, and its code and models are freely available to the community. This encourages collaboration, contributions, and the development of customized versions and applications.</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">There is a vibrant community of researchers, developers, and enthusiasts who contribute to YOLO's improvement, share their own variations, and offer support through forums, GitHub repositories, and online communities.</div>
-                                    </li>
-                                </ul>
-                            </div> <!-- end of tab-pane -->
-                            <!-- end of tab -->
-        
-                        </div> <!-- end of tab-content -->
-                        <!-- end of tabs content -->
-        
-                    </div> <!-- end of tabs-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src=" {{ url_for('static', filename='images/scissors.png') }}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of tabs -->
-    <!-- end of details 2 -->
+    
+	
 
 	
     <!-- Scripts -->

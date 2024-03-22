@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome-all.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Revo</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="#" style="text-decoration: none;font-size: px;"><img
+                    src="{{ url_for('static', filename='images/assist.png') }} " style="width: 100px; height: 100px;">
+                Visual Assist
+            </a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ url_for('index') }}">HOME <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ url_for('mainf') }}">MAIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ url_for('how') }}">HOW IT WORKS</a>
+                    </li>
+
+                </ul>
+
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-fluid" src=" {{ url_for('static', filename='/images/main1.png') }}" alt="alternative">
+                    <!-- <h1>Main Page(dummy text)</h1> -->
+
+                    <!---->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+ <!-- Details Lightbox -->
+    <!-- Lightbox -->
+    <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button"></button>
+            <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src=" {{ url_for('video_feed') }}">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Visual assist</h3>
+                <hr>
+                <p>On the left side webcam is displayed .</p>
+                <h4>Steps:-</h4>
+                <p>Follow the steps given below:-</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-square"></i>
+                        <div class="media-body">step1.</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-square"></i>
+                        <div class="media-body">step2.</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-square"></i>
+                        <div class="media-body">step3</div>
+                    </li>
+                    <!-- <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Location details screen</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-square"></i><div class="media-body">Onboarding steps interface</div>
+                    </li> -->
+                </ul>
+                <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightbox -->
+    <div id="details" class="basic-1 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='/images/about1.png') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>1. Use Your Webcam:</h2>
+                        <!-- <p>Our experienced designers and developers have implemented cutting edge tools that will help you sketch your ideas in record time and prepare the design</p> -->
+                        <ul class="list-unstyled li-space-lg">
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Give the app access to your camera to see objects live!
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Ensure that your environment is well lit to get the best results. 
+                                    </div>
+                                </li>
+                            </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+    <!-- Details 2 -->
+    <div class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="tabs-container">
+
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="revoTabsContent">
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <h2>2. Object Detection Power:</h2>
+                                <!-- <p>American Sign Language (ASL) is a visual language that is primarily used by deaf and hard-of-hearing individuals in the United States and Canada. It is a complex language that utilizes hand gestures, facial expressions, and body movements to convey meaning and is recognized as a fully-fledged language by linguists. <a class="turquoise page-scroll" href="#features">features</a> section shows how we are able to achieve all this.</p> -->
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">A super smart model called YOLOv5 takes a look at your webcam feed.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">This model is trained on tons of pictures to recognize many different things!</div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">A super smart model called YOLOv5 takes a look at your webcam feed.
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">This model is trained on tons of pictures to recognize many different things!</div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                        </div> <!-- end of tab-content -->
+                        <!-- end of tabs content -->
+
+                    </div> <!-- end of tabs-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='/images/about2.png') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->
+    <div id="details" class="basic-1 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='/images/about3.png') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>3. Speak Your Mind <br> (in Text!)</h2>
+                        <!-- <p>Our experienced designers and developers have implemented cutting edge tools that will help you sketch your ideas in record time and prepare the design</p> -->
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">YOLOv5 tells the app what objects it sees.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">The app then turns those objects into words.
+                                </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Finally, the app uses text-to-speech to create a voice message describing the objects it found.
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Scripts -->
+
+    <script src=" {{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ url_for('static', filename='js/swiper.min.js') }}"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> <!-- Custom scripts -->
+</body>
+
+</html>

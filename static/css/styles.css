@@ -40,7 +40,7 @@ html {
 }
 
 body, p {
-	color: #ffffff; 
+	color: #000000; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -139,7 +139,7 @@ a.white:hover {
 }
 
 .bg-dark-blue {
-	background-color: #000000;
+	background-color: #ffffff;
 }
 
 .btn-solid-reg {
@@ -564,7 +564,7 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7.5rem;
 	padding-bottom: 7.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/header-background.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/Frame\ 1.png') center center no-repeat;
 	background-size: cover;
 }
 
@@ -715,10 +715,10 @@ input[type='checkbox'] {
 
 .cards-1 .card-title {
 	margin-bottom: 0.5rem;
-	color: #ffffff;
+	color: #000000;
 }
 .card-t{
-	color: #ffffff;
+	color: #d0efff;
 }
 
 /*********************/

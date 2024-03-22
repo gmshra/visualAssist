@@ -40,7 +40,7 @@ html {
 }
 
 body, p {
-	color: #000000; 
+	color: #ffffff; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -139,7 +139,7 @@ a.white:hover {
 }
 
 .bg-dark-blue {
-	background-color: #ffffff;
+	background-color: #000000;
 }
 
 .btn-solid-reg {
@@ -415,6 +415,7 @@ input[type='checkbox'] {
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
+	position: fixed;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -564,7 +565,7 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7.5rem;
 	padding-bottom: 7.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/Frame\ 1.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/header-background.png') center center no-repeat;
 	background-size: cover;
 }
 
@@ -715,7 +716,7 @@ input[type='checkbox'] {
 
 .cards-1 .card-title {
 	margin-bottom: 0.5rem;
-	color: #000000;
+	color: #ffffff;
 }
 .card-t{
 	color: #d0efff;
@@ -766,7 +767,7 @@ input[type='checkbox'] {
 	max-width: 1150px;
 	margin: 2.5rem auto;
 	padding: 3rem 1rem;
-	background-color: #3a3458;
+	background-color: #194162;
 	text-align: left;
 }
 
@@ -1422,7 +1423,7 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: #3a3458;
+		background-color: #194162;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
 	}
 

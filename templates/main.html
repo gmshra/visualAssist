@@ -41,11 +41,12 @@
                                 class="sr-only">(current)</span></a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{ url_for('mainf') }}">MAIN</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="{{ url_for('how') }}">HOW IT WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="{{ url_for('mainf') }}">MAIN</a>
                     </li>
 
                 </ul>
@@ -88,20 +89,20 @@
                 <h3>Visual assist</h3>
                 <hr>
                 <p>On the left side webcam is displayed .</p>
-                <h4>Steps:-</h4>
-                <p>Follow the steps given below:-</p>
+                <h4>Tips:-</h4>
+                <p>Follow the tips for better resuts:-</p>
                 <ul class="list-unstyled li-space-lg">
                     <li class="media">
                         <i class="fas fa-square"></i>
-                        <div class="media-body">step1.</div>
+                        <div class="media-body">1. Keep the environment well lit.</div>
                     </li>
                     <li class="media">
                         <i class="fas fa-square"></i>
-                        <div class="media-body">step2.</div>
+                        <div class="media-body">2. Ensure that the objects are fully in frame. </div>
                     </li>
                     <li class="media">
                         <i class="fas fa-square"></i>
-                        <div class="media-body">step3</div>
+                        <div class="media-body">3. Increase the volume if the audio output isn't audible.</div>
                     </li>
                     <!-- <li class="media">
                         <i class="fas fa-square"></i><div class="media-body">Location details screen</div>
@@ -121,7 +122,7 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src=" {{ url_for('static', filename='') }}" alt="alternative">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='images/1.png') }}" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-5">
@@ -253,7 +254,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src=" {{ url_for('static', filename='') }}" alt="alternative">
+                        <img class="img-fluid" src=" {{ url_for('static', filename='images/2.png') }}" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
